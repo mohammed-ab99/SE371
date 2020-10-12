@@ -1,0 +1,295 @@
+/* Add a black background color to the top navigation */
+.navbar {
+  background-image: linear-gradient(#2193b0, #6dd5ed);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #144855;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the navbar on small screens */
+  .navbar .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the navbar */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2193b0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on navbar links and the dropdown button on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #144855;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .dropdown {float: none;}
+    .navbar.responsive .dropdown-content {position: relative;}
+    .navbar.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+  /* Using google font*/
+  body {
+    font-family: 'Alata';
+    font-size: 22px;
+    margin-bottom: 100px;
+    margin: 0%;  
+}
+
+.myForm{
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+/*Form Styling*/
+input[type=text],
+select,
+textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: lato;
+    display: block;
+}
+
+input[type=submit] {
+  background-color: #144855;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+input[type=submit]:active {
+  opacity: 0.5;
+}
+
+input[type=submit]:visited {
+  opacity: 0.9;
+}
+
+/*Map Styling*/
+.mapContainer {
+  border-radius: 1%;
+  margin-bottom: 2%;
+
+}
+
+.map {
+  width: 90%;
+  border-radius: 1%;
+  box-shadow: 2px 2px 10px 0px #999;
+  margin: 4%;
+}
+
+#contactAddress {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h2{
+  margin-left: 5%;
+}
+
+
+
+
+
+  /*---------------Footer----------------*/
+  footer {
+    background-color: #3D4849;
+    color: aliceblue;
+    margin-bottom: -5%;
+    padding: 2%;
+  
+  }
+  
+  #footerContentContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-decoration: none;
+  }
+  
+  .fa {
+    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa:active {
+    opacity: 0.5;
+  }
+  
+  .fa:visited {
+    opacity: 0.9;
+  }
+  
+  
+  .contactLink {
+    color: #fff;
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .contactLink:hover {
+    opacity: 0.7;
+  }
+  
+  .contactLink:active {
+    opacity: 0.5;
+  }
+  
+  .contactLink:visited {
+    opacity: 0.9;
+  }
+  
+  .footerContact {
+    padding-bottom: 1%;
+    margin-left: 0.5%;
+    font-size: 110%;
+    vertical-align: top;
+    text-decoration: none;
+    font-family: 'Alata';
+  
+  }
+  
+  #copyright {
+    font-size: 75%;
+    font-family: lato;
+    text-align: center;
+  }
+  
+  .FooterLink {
+    text-decoration: none;
+    color: #fff;
+    display: inline;;
+  }
+  
+  .FooterLink address {
+    font-size: 110%;
+    margin-left: -10px;
+  }
+  
+  .FooterLink:hover {
+    opacity: 0.7;
+  }
+  
+  .FooterLink:active {
+    opacity: 0.5;
+  }
+  
+  .FooterLink:visited {
+    opacity: 0.9;
+  }
+  
+  /*#bottomAddress {
+    display: inline-block;
+  }*/
+  
+  /*---------------Footer End----------------*/
