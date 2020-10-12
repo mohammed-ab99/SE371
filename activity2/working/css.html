@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <!--Responsive Design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importing CSS file & font-awesome & google icons-->
+    <link rel="stylesheet" href="E:\University\PSU\201\SE371\a2\style\css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Google Font-->
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+</head>
+
+
+<body>
+
+    <!--Navbar-->
+    <div class="navbar" id="myTopnav">
+        <a href="E:\University\PSU\201\SE371\a2\index.html" >Home</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html" class="active">CSS</a>
+        <a href="javascript.html" >JAVASCRIPT</a>
+        <a href="php.html" >PHP</a>
+        <a href="contactus.html">CONTACT US</a>
+        <!--dropdown menu-->
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="E:\University\PSU\201\SE371\a2\CVs\Mohammed Abed\217110015_cv.html">Mohammed Abed</a>
+                <a href="E:\University\PSU\201\SE371\a2\CVs\Salim-Hijazi\First-project-master\index.html">Salim Hijazi</a>
+                <a href="E:\University\PSU\201\SE371\a2\CVs\Abdulrahman-Al-Mazrou\CV--master\rm.htm">Abdulrahman Al Mazrou</a>
+                <a href="E:\University\PSU\201\SE371\a2\CVs\Nour-Tabba\index.html">Nour Tabba</a><!--Nour didnt do the CV assignement-->
+            </div>
+        </div>
+    </div>
+
+    <!--Banner Image-->
+    <div class="banner">
+        <div class="banner-text">
+        </div>
+    </div>
+
+    <h1>Learn CSS <span class="fa fa-css3"></span></h1>
+
+
+    <!--CSS code images in card style-->
+    <div class="row">
+        <div class="column">
+            <div class="polaroid">
+                <img src="E:\University\PSU\201\SE371\a2\img\html-style.png" alt="html css">
+                <div class="container">
+                    <p>HTML Styling</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="polaroid">
+                <img src="E:\University\PSU\201\SE371\a2\img\index-style.png" alt="home css">
+                <div class="container">
+                    <p>HOME Styling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CSS code using <code> tag-->
+    <h3>CSS Code</h3>
+    <p>CSS Styling:</p>
+    <code>
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+              }
+            
+              div.polaroid {
+                width: 70%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 50px;
+              }
+              
+              div.container {
+                text-align: center;
+                padding: 10px 20px 70px;
+              }
+        </code>
+
+    <!--Footer -->
+    <footer>
+
+        <div id="footerContentContainer">
+
+            <!--Social media accounts-->
+            <a href="#" class="fa fa-linkedin fa-2x" target="_blank"></a>
+            <a href="#" class="fa fa-github fa-2x" target="_blank"></a>
+            <a href="#" class="fa fa-twitter fa-2x" target="_blank"></a>
+            <a href="#" class="fa fa-instagram fa-2x" target="_blank"></a>
+
+            <br><br>
+
+            <!--Mail & Address-->
+            <a href="https://mailto:217110015@psu.edu.sa" class="footerLink" target="_blank">
+                <p class="contactLink"><i class="material-icons contactIcons">email</i> <span
+                        class="footerContact">217110015@psu.edu.sa</span></p>
+            </a>
+
+            <br><br>
+
+            <a href="https://goo.gl/maps/5kfj4DkLz8yGtUocA" class="footerLink" target="_blank">
+                <p class="contactLink"><i class="material-icons contactIcons">business</i> <span class="footerContact"
+                        id="address">
+                        <address id="bottomAddress">12435 Salahuddin, Riyadh, SA</address>
+                    </span></p>
+            </a>
+
+            <br>
+            <hr>
+
+            <p id="copyright">2020 © Copyright by Mohammed Abed. All rights reserved</p>
+            <!--Copyright Claim-->
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
