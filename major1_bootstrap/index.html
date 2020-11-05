@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom style & js-->
+    <link rel="stylesheet" href="style\stlyes.css">
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images\logo.png" alt="logo" style="width: 40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="working\subject.html" id="navbardrop" data-toggle="dropdown">
+                    WEBDEV
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="working\subject.html">HTML</a>
+                    <a class="dropdown-item" href="working\subject.html">CSS</a>
+                    <a class="dropdown-item" href="working\subject.html">JavaScript</a>
+                </div>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    CLUBS
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="working\acm.html">ACM</a>
+                    <a class="dropdown-item" href="working\ieee.html">IEEE</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="working\aboutme.html">ABOUT ME</a>
+            </li>
+
+        </ul>
+
+        <!--right content-->
+        <div class="navbar-collapse collapse w-150 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/home"><span class="fa fa-twitter fa-lg"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/"><span class="fa fa-facebook fa-lg"></span></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--CAROUSEL-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images\c1.jpg" alt="Los Angeles" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3>Mohammed Abed</h3>
+                    <p>SE371</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images\c2.jpg" alt="Chicago" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3 class="caption">Dr. Yasir Javid</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images\c3.jpg" alt="New York" width="1100" height="300">
+                <div class="carousel-caption">
+                    <h3>Prince Sultan Unviersity</h3>
+                    <p>CCIS</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <pre>
+
+
+    </pre>
+
+    <!--SIDENAV-->
+    <div class="container">
+        <div class="btn-group-vertical">
+            <!--location.href for redirecting to other pages-->
+            <button type="button" class="btn btn-warning" onclick="location.href='index.html'">HOME</button></a>
+            <button type="button" class="btn btn-light" onclick="location.href='working\\subject.html'">WEBDEV</button>
+            <button type="button" class="btn btn-light" onclick="location.href='working\\acm.html'">CLUBS</button>
+            <button type="button" class="btn btn-light" onclick="location.href='working\\aboutme.html'">ABOUT ME</button>
+
+        </div>
+    </div>
+
+    <!--ESTABLISHMENT-->
+    <div class="container p-3 my-3 bg-success text-white">
+        <h1>The Establishment</h1>
+        <p>The announcement of the establishment of Prince Sultan University took place during a ceremony held in the
+            presence of Prince Sultan, where it was declared the establishment of the first non-profit private college
+            in Saudi Arabia as a gift to His Highness Prince Sultan bin Abdulaziz upon his return from the medical
+            treatment journey in 1998. The founder, King Salman, the Custodian of the Two Holy Mosques, was instrumental
+            in establishing PSU when he was the Governor of Riyadh Region and Chairman of the Board of Directors of the
+            Al-Riyadh Philanthropic Society for Science (RPSS).
+        </p>
+    </div>
+
+    <pre>
+
+
+
+
+    </pre>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4 bg-dark text-white pr-5 pl-5">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Mohammed Abed</h5>
+                    <p>217110015@psu.edu.sa <br>
+                        301130 <br>
+                        +966500098128</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Contanct Information</h5>
+                    <p class="social-icons">
+                        <a href="https://github.com/mohammed-ab99"><span class="fa fa-github fa-2x fa-fw"></span></a>
+                        <a href="https://twitter.com/home"><span class="fa fa-twitter fa-2x fa-fw"></span></a>
+                        <a href="https://www.facebook.com/"><span class="fa fa-facebook fa-2x fa-fw"></span></a>
+                        <a href="https://instagram.com/"><span class="fa fa-instagram fa-2x fa-fw"></span></a>
+                        <a href="https://www.linkedin.com/in/mohammed-abed-itil%C2%AE-b9a60186/"><span
+                                class="fa fa-linkedin fa-2x fa-fw"></span></a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Mohammed Abed 217110015
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+</body>
