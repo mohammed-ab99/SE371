@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ABOUT ME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom style & js-->
+    <link rel="stylesheet" href="..\style\stlyes.css">
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="..\images\logo.png" alt="logo" style="width: 40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="..\index.html">HOME</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="subject.html" id="navbardrop" data-toggle="dropdown">
+                    WEBDEV
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="subject.html">HTML</a>
+                    <a class="dropdown-item" href="subject.html">CSS</a>
+                    <a class="dropdown-item" href="subject.html">JavaScript</a>
+                </div>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    CLUBS
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="acm.html">ACM</a>
+                    <a class="dropdown-item" href="ieee.html">IEEE</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            </li>
+
+        </ul>
+
+        <!--right content-->
+        <div class="navbar-collapse collapse w-150 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/home"><span class="fa fa-twitter fa-lg"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/"><span class="fa fa-facebook fa-lg"></span></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <!--SIDENAV-->
+    <div class="container mt-3">
+        <div class="btn-group-vertical">
+            <!--location.href for redirecting to other pages-->
+            <button type="button" class="btn btn-warning" onclick="location.href='../index.html'">HOME</button></a>
+            <button type="button" class="btn btn-light" onclick="location.href='subject.html'">WEBDEV</button>
+            <button type="button" class="btn btn-light" onclick="location.href='acm.html'">CLUBS</button>
+            <button type="button" class="btn btn-light" onclick="location.href='aboutme.html'">ABOUT
+                ME</button>
+
+        </div>
+    </div>
+
+    <!--CONTENT-->
+    <!--PERSONAL iNFO IN CARD STYLE-->
+    <div class="container">
+        <h2 style="text-align: center;">Personal Information</h2>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="..\images\me.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Mohammed Abed - 217110015</h4>
+                <p class="card-text">Mohammed is a Junior Software Engineer</p>
+                <a href=".\cv\217110015_cv.html" class="btn btn-primary">See Full CV</a>
+            </div>
+        </div>
+    </div>
+
+    <pre>
+
+
+
+    </pre>
+
+    <!--CODE SNIPPETS-->
+    <div class="container p-5 mx-auto">
+        <h2 style="text-align: center;">CSS Code Snippets</h2>
+        <img src="..\images\html1.PNG" class="img-thumbnail" alt="Cinque Terre" style="width: 250px; height: 250px;">
+        <img src="..\images\html2.PNG" class="img-thumbnail" alt="Cinque Terre" style="width: 250px; height: 250px;">
+        <img src="..\images\css1.PNG" class="img-thumbnail" alt="Cinque Terre" style="width: 250px; height: 250px;">
+    </div>
+
+    <pre>
+
+
+
+
+
+
+
+    </pre>
+
+    <!--FORM-->
+    <div class="form-bg">
+        <div class="container p-5">
+
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+
+                    <form id="contact-form" method="post" action="" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="text-white">Contact Us !</h4>
+                                    <div class="form-group">
+                                        <label for="form_name">Name</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Please enter your firstname *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form_name">Company</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Please enter your firstname *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form_name">Telephone</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Please enter your firstname *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form_name">Email</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Please enter your firstname *" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Subscribe</h4>
+                                    <div class="form-group">
+                                        <label for="form_lastname">Email Address</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Please enter your lastname *" required="required"
+                                            data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary">Subscribe</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5 class="text-white">Our Location</h5>
+                                        <iframe class="location"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1811.8694794108774!2d46.699904689350205!3d24.735840598496225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0292c1fb5529%3A0x3fbc5cb308e60dd8!2sPrince+Sultan+University!5e0!3m2!1sen!2seg!4v1563955007899!5m2!1sen!2seg"
+                                            frameborder="0" style="border:0" allowfullscreen="" id="fitvid0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message</label>
+                                        <textarea id="form_message" name="message" class="form-control"
+                                            placeholder="Message for me" rows="4" required
+                                            data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4 bg-dark text-white pr-5 pl-5">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Mohammed Abed</h5>
+                    <p>217110015@psu.edu.sa <br>
+                        301130 <br>
+                        +966500098128</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Contanct Information</h5>
+                    <p class="social-icons">
+                        <a href="https://github.com/mohammed-ab99"><span class="fa fa-github fa-2x fa-fw"></span></a>
+                        <a href="https://twitter.com/home"><span class="fa fa-twitter fa-2x fa-fw"></span></a>
+                        <a href="https://www.facebook.com/"><span class="fa fa-facebook fa-2x fa-fw"></span></a>
+                        <a href="https://instagram.com/"><span class="fa fa-instagram fa-2x fa-fw"></span></a>
+                        <a href="https://www.linkedin.com/in/mohammed-abed-itil%C2%AE-b9a60186/"><span
+                                class="fa fa-linkedin fa-2x fa-fw"></span></a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Mohammed Abed 217110015
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
